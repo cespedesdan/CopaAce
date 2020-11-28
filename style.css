@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+	background-image: url('imagens/bg.jpg');
+}
+
+header{
+	border-bottom: 1px solid #E0E0E0; 
+	height:150px;
+	width:100%; 
+}
+/*
+=========================
+logotipo
+=========================
+*/
+	header h1 a{
+		background:url(imagens/banner.jpg) no-repeat; 
+		display:block; 
+		float:left; 
+		height:135px; 
+		text-indent:-9999; 
+		width:55.333333333333%; 
+		padding-bottom: 7px;
+		margin-top: 5px;
+		margin-left: 8px
+	}
+/*
+=========================
+nav - menu de navegação
+=========================
+*/
+nav{
+	float:right;
+	margin-top:78px; 
+	text-align:right; 
+	width:41.6666666666667%;
+}
+	nav ul{
+		list-style-type:none; 
+	}
+		nav li {
+			display: inline; 
+		}
+			nav ul li a{
+				margin-right: 2.5%; 
+			}
+				nav ul li:nth-child(5) a{
+					margin-right:0; 
+				}
+			nav a:link, nav a:visited{
+				color:#999;
+				font-size: 1.2222222222em; 
+				font-weight: 300;
+				letter-spacing: -0.0909090909em; 
+				line-height: 1.18181818182em; 
+				display:inline-block;
+			}
+			nav a.ativo:link, nav a:hover{
+				color:#FE9380; 
+			}
+/*----------------------------------------------------------
+Seção .CHAMADA 
+----------------------------------------------------------*/
+.chamada{
+	height:auto;
+	text-align:center;
+	width:100%; 
+	color:white;
+}
+	h2 span{
+		font-size: 1em; 
+		font-weight: 300;
+		letter-spacing: -0.0333333333em; 
+		line-height: 1em; 
+	}
+	.chamada h3 {
+		margin: 0 auto;
+		width:75%; 
+	}
+
+.container{
+	background-color:hsla(0, 0%, 50%, 0.5);
+	height: 470px;
+	padding:2.5%; 
+}
+/*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
+.desktop, .tablet, .mobile{
+	float:left;
+	position:relative;
+	text-align:center;
+	width:31.57894736842105%; 
+}
+.desktop, .tablet{
+	margin-right: 2.631578947368421%; 
+}
+.mobile{
+	background-color:#00A2AA;
+	margin-right:0px;
+}
+.tablet{
+	background-color:#c9c9c9;
+}
+.desktop{
+	background-color:#00A2AA;
+}
+
+
+img {
+max-width: 100%;
+height: 150px;
+}
+
+.container figure{
+	margin: 15px auto 0px auto; 
+	width:69.44444444444444%; 
+}
+
+.container .h3{
+	color:#fff;
+	font-size: 1.77777777778em; 
+	font-weight: 300;
+	letter-spacing: -0.0625em; 
+	padding-bottom: 30px;
+	text-shadow:none;
+}
+.container p{
+	background-color:#fff;
+	float:left;
+	height:auto;
+	padding: 1.9444444444444445%; 
+	position:absolute;
+	max-width:100%; 
+	text-align:justify;
+	top:225px;
+}
+
+span.btn{
+	font-size: 1.1111111111em; 
+	font-weight: 400;
+	letter-spacing: -0.1em; 
+	height:27px;
+	margin-top: 30px;
+	position:absolute;
+	right: 1px;
+	text-align:center;
+	text-shadow:none;
+	width:33.33333333333333%; 
+}
+span.btn a{
+	color:#fff;
+	padding: 2px 3.333333333333333%; 
+}
+.desktop span.btn a{
+	background-color:#00A2AA;
+}
+.tablet span.btn a{
+	background-color:#c9c9c9;
+}
+.mobile span.btn a{
+	background-color:#00A2AA;
+}
+
+footer{
+	clear:both;
+	height: 50px;
+	padding: 10px 0;
+	width:100%; 
+}
+.copyright{
+	float:left;
+	margin-left: 2.5%; 
+	color: white;
+}
+
+.desenvolvedor{
+	float:right;
+}
+.desenvolvedor figure a img{
+	height:70px;
+}
+
+@media only screen and (min-width:250px) and (max-width: 520px) {
+	For tablet:
+.container{
+	background-color:hsla(0, 0%, 50%, 0.75);
+	padding:2.5%; 
+	min-height: 1080px;
+	width:100%; 
+	border-radius: 18px;
+}}
+
+@media only screen and (max-width: 768px) {
+	 For mobile phones: 
+
+header{
+	border-bottom: 1px solid #E0E0E0; 
+	height:150px;
+	width:100%; 
+}
+/*
+=========================
+logotipo
+=========================
+*/
+	header h1 a{
+		background:url(imagens/banner.jpg) no-repeat center; 
+		display: block; 
+		float: none; 
+		height: 139px; 
+		width:100%; 
+	}
+/*
+=========================
+nav - menu de navegação
+=========================
+*/
+nav{
+	float:none;
+	margin-top:15px; 
+	text-align:center; 
+	width:100%;
+}
+
+/*----------------------------------------------------------
+Seção .CHAMADA 
+----------------------------------------------------------*/
+
+.container{
+	background-color:hsla(0, 0%, 50%, 0.75);
+	padding:2.5%; 
+	min-height: 1220px;
+	width:100%; 
+	border-radius: 18px;
+}
+
+
+/*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
+.desktop, .tablet, .mobile{
+	float:left;
+	position:relative;
+	text-align:center;
+	width:31.57894736842105%; 
+}
+.desktop, .tablet{
+	margin-right: 2.631578947368421%; 
+}
+.mobile{
+	background-color:#00A2AA;
+	border-radius: 0px 0px 18px 18px;
+}
+.desktop{
+	background-color:#c9c9c9;
+	border-radius: 18px 18px 0px 0px;
+}
+.tablet{
+	background-color:#00A2AA;
+}
+
+
+
+img {
+max-width: 50%;
+height: auto;
+}
+
+.container figure{
+	margin: 15px auto 0px auto; 
+	width:50%; 
+}
+
+.container h3{
+	color: black;
+	font-size: 1.65em; 
+	font-weight: 300;
+	letter-spacing: -0.0625em; 
+	margin-bottom: 30px;
+	text-shadow:none;
+}
+.container p{
+	background-color:#fff;
+	float:none;
+	height:auto;
+	position:  sticky;
+	padding: 1.9444444444444445%; 
+	max-width:100%; 
+	text-align:justify;
+	margin-bottom: 27px;
+}
+container col-1 desktop coluna1 .figure .img{
+	border-radius: 30px;
+
+}
+
+
+span.btn{
+	font-size: 1.1111111111em; 
+	font-weight: 400;
+	letter-spacing: -0.1em; 
+	height:27px;
+	margin-top: 30px;
+	position:absolute;
+	right: 1px;
+	text-align:center;
+	text-shadow:none;
+	width:33.33333333333333%; 
+}
+span.btn a{
+	color:#fff;
+	padding: 2px 3.333333333333333%; 
+}
+.desktop span.btn a{
+	background-color:#00A2AA;
+}
+.tablet span.btn a{
+	background-color:#c9c9c9;
+}
+.mobile span.btn a{
+	background-color:#00A2AA;
+}
+
+[class*="col-"] {
+	width: 100%;}
+
+.desenvolvedor figure a img{
+	height:10%;
+	width: 10%;
+	float: right;
+
+}
+
+
